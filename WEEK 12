@@ -1,0 +1,22 @@
+SEND ‘Please enter your height in cm’ TO DISPLAY
+RECEIVE height FROM KEYBOARD
+SEND ‘Please enter your weight in kg’ TO DISPLAY
+RECEIVE weight FROM KEYBOARD
+SET ‘BMI’ TO weight/height2
+SEND BMI TO DISPLAY
+
+
+
+
+
+
+
+SEND 'Enter Temperature' TO DISPLAY
+RECEIVE temperature FROM KEYBOARD
+IF temperature <22 THEN
+SEND 'Cold! The perfect bathroom temperature is usually between 22-24 °C' TO DISPLAY
+ELSE IF temperature <25 THEN
+SEND 'Perfect' TO DISPLAY
+ELSE SEND 'No! The perfect bathroom temperature is usually between 22-24 °C' TO DISPLAY
+END IF
+END IF
